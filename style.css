@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  pad: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 15px;
+}
+body {
+  background-color: rgb(230, 227, 227);
+  font-family: 'Poppins', sans-serif;
+}
+header {
+  background-color: rgb(77, 0, 186);
+  height: 250px;
+  width:100%; 
+}
+#Logo {
+  color: rgb(91, 211, 211);
+  font-family: cursive;
+  width:100%;
+  text-align: center;
+}
+.conteudo {
+  width: 900px;
+  margin: auto;
+}
+
+.viewer-assis {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.Container1 {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 0 30px;
+
+}
+.Container2 {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 0 30px;
+ 
+}
+.Container3 {
+  background-color: rgb(82, 32, 218);
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 5px;
+  color: aliceblue;
+  padding: 0 30px;
+} 
+/*-----links e botoes-------*/ 
+a{
+  color: rgb(129, 88, 243);
+  text-decoration: none;
+}
+a:hover{
+  color: blue;
+}
+.button{
+ 
+  display:inline-block ;
+  margin-top:35px;
+ }
+
+ .button-cancel, .button-save {
+   border-radius: 5px;
+  height: 50px;
+  border: none;
+ } 
+
+ .button-save {
+  background-color: rgb(77, 0, 186);
+   color: white;
+   width: 225px;
+   cursor: pointer;
+ }
+
+ .button-save:hover{
+   color: rgb(2, 2, 2);
+   background-color:rgb(123, 28, 201);
+
+ }
+
+ .button-cancel{
+  width: 225px;
+   color: black;
+   border-width: 2px;
+   border-style: solid;
+  border-color: red;
+  text-align: center;
+  padding-top: 12px;
+   
+ }
+
+/*---------Conteudo do botão--------*/
+
+.layersinternal {
+    height: 100%;
+    width: 100%;
+    background-color:rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity:0;
+    visibility: hidden;
+}
+.layersinternal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+ .layers {
+   background-color:rgb(217, 234, 235);
+   padding: 15px;
+   width: 90%;
+   max-width: 500px;
+
+ }
+
+ #form {
+   max-width: 500px;
+ }
+ #form h2 {
+   margin-top:0;
+ }
+  input {
+    border:none;
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+  }
+  .input-group{
+    margin-top:15px;
+  }
+ 
+  .small {
+    opacity: 0.4;
+  }
+
+.input-group.actions {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+/*-----------tittle---------*/
+
+h3 {
+  font-family: Verdana;
+  font-size: 12px;
+  line-height: 50px;
+  opacity: 70%;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+}
+
+
+/* ---------cabeçalho da tabela-------- */
+
+.Container4 {
+ 
+  text-align: left;
+  border-spacing: 0 5px;
+  height: 50px;
+  background-color: white;
+  
+}
+.transaction {
+  position: absolute;
+}
+
+/*================Tabela ============= */
+#transaction-table {
+display: block;
+width: 100%;
+overflow-x: auto;
+
+}
+
+#table {
+  margin-top:10px;
+  width: 100%;
+  height: 10px;
+  border-spacing: 0 5px;
+}
+table tr:hover {
+  opacity: 0.7;
+}
+table tr {
+  opacity: 1;
+}
+table td {
+  background-color: white;
+  height: 50px;
+}  
+#special {
+  opacity:1;
+}
+.money {
+  font-family: Verdana;
+  font-size: 25px;
+  padding: 30px;
+}
+
+.Start {
+  border-radius: 8px 0px 0px 8px;
+  padding-left:30px;
+}
+.data {
+  border-radius: 0px 8px 8px 0px;
+  padding: 0 50px;
+}
+.theend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0px 8px 8px 0px;
+  padding: 0 30px;
+}
+.opacy {
+   color: rgb(146, 146, 146);
+}
+
+.exit {
+  color: red;
+}
+
+.prohibited {
+  color: rgb(58, 247, 58);
+}
+
+.rodape {
+  text-align:center;
+  color: cadetblue;
+  font-size: 15px;
+  margin-top: 80px;
+  }
+/* --------------Responsive ------------*/
+ @media (min-width:800px){
+    
+      html {
+        font-size:14px;
+      }  
+#balance {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: -100px;
+  width: 100%;
+  
+}
+}
